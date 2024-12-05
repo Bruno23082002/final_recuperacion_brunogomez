@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Operaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button onclick="location.href='index.html'">Página Principal</button>
+            <button onclick="location.href='contact.html'">Formulario de Contacto</button>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th class="animated-header">Operación</th>
+                    <th class="animated-header">Descripción</th>
+                    <th class="animated-header">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total de Producto</td>
+                    <td>Calcula el precio por la cantidad</td>
+                    <td><button onclick="calcular('total')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>30% de Precio</td>
+                    <td>Calcula el 30% del precio</td>
+                    <td><button onclick="calcular('porcentaje30')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>25% de Descuento</td>
+                    <td>Calcula el 25% de descuento de un precio</td>
+                    <td><button onclick="calcular('descuento')">Calcular</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
